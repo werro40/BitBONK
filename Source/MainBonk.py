@@ -14,14 +14,14 @@ Created on Sat Jan 16 08:54:13 2021
 import numpy as np
 import matplotlib.pyplot as plt
 
-from flask import Flask, redirect, url_for, render_template, request
+from flask import Flask, redirect, url_for, render_template, request, send_from_directory
 
 
 def plotter(day):
     return day;
 
 
-app = Flask(__name__)
+app = Flask(__name__,upload_folder='image')
 
 @app.route("/")
 def home():
@@ -39,6 +39,11 @@ def bonker():
         return redirect(url_for("bonker"))
     else:
         return render_template("bonker.html")
+
+@app.route('/img/<path:filename>') 
+def send_file(filename): 
+    return send_from_directory(app.upload_folder, filename)
+
 
 #@app.route("/<usr>", methods=["POST","GET"])
 # user(usr):
