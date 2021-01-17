@@ -1,0 +1,11 @@
+{% extends "base.html"%}
+{% block title %} Bonker{% endblock %}
+
+{% block content %} 
+<form action='#' method="post">
+ <p> Days of Forecasting:</p>
+ <p><input type="number" min="0" name="nm"></p>
+ 
+ <p><input class="btn btn-primary" type="submit" value="submit"></p>
+</form>
+{% endblock %}
