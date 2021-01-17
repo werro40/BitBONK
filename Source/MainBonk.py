@@ -21,7 +21,7 @@ def plotter(day):
     return day;
 
 
-app = Flask(__name__,upload_folder='image')
+app = Flask(__name__, static_url_path='/static')
 
 @app.route("/")
 def home():
@@ -40,10 +40,10 @@ def bonker():
     else:
         return render_template("bonker.html")
 
-@app.route('/img/<path:filename>') 
-def send_file(filename): 
-    return send_from_directory(app.upload_folder, filename)
 
+# @app.route('/static/<path:path>')
+# def send_js(path):
+#     return send_from_directory('js', path)
 
 #@app.route("/<usr>", methods=["POST","GET"])
 # user(usr):
