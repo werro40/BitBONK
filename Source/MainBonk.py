@@ -21,7 +21,7 @@ def plotter(day):
     return day;
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 
 @app.route("/")
 def home():
@@ -39,6 +39,10 @@ def bonker():
         return redirect(url_for("bonker"))
     else:
         return render_template("bonker.html")
+
+# @app.route('/static/<path:path>')
+# def send_js(path):
+#     return send_from_directory('js', path)
 
 #@app.route("/<usr>", methods=["POST","GET"])
 # user(usr):
