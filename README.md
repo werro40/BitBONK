@@ -1,6 +1,11 @@
 # BitBONK
 ![logo](https://user-images.githubusercontent.com/37347053/192898150-da77e13a-7220-4eea-8205-543328aa3472.jpg)
 
+<img width="1247" alt="bonk1" src="https://user-images.githubusercontent.com/37347053/192900005-db778628-a7d8-421f-b4ee-d7a15fd33432.png">
+
+<img width="1248" alt="Bonk 2" src="https://user-images.githubusercontent.com/37347053/192900021-20877564-051b-43ee-a46d-323fe6e61e89.png">
+
+
 A BTC price forecasting webapp.
 
 Bitcoin Anomoly events:
