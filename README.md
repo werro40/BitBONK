@@ -10,7 +10,7 @@ https://techcrunch.com/2018/01/15/researchers-finds-that-one-person-likely-drove
 https://www.cnbc.com/2018/06/13/much-of-bitcoins-2017-boom-was-market-manipulation-researcher-says.html
 
 # Data collection
-We used the Yahoo Finance API
+We used the Yahoo Finance API for BTC closing price data for the past 200 trading days.
 
 # Exploratory Data Analysis
 Interesting feature in the Fourier Transform 
