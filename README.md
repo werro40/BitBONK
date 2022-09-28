@@ -1,4 +1,6 @@
 # BitBONK
+![logo](https://user-images.githubusercontent.com/37347053/192898150-da77e13a-7220-4eea-8205-543328aa3472.jpg)
+
 A BTC price forecasting webpage and script.
 
 Bitcoin Anomoly events:
